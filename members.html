@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Links to my js and css files-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js"></script>
+
+
+  <title>Members</title>
+</head>
+
+
+<body>
+  <header>
+    <!--Navigation and logo-->
+    <a href="index.html"><img class="logo" src="niner_img.png" alt="niner_logo"></a>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join_community.html">Join Our Community</a></li>
+        <li><a href="club_merch.html">Club Merch</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="teams.html">Teams</a></li>
+      </ul>
+    </nav>
+
+    <!--Contact us button-->
+    <a class = "cta" href="mailto:49erEsports@uncc.edu"><button>Contact Us</button></a>
+  </header>
+
+  <main>
+
+    <!--Main section where updated members will be posted and pictures-->
+    <h1>Members</h1>
+    <p>These are our current Officers of the UNCC eSports organization.</p>
+
+    <!--Images of current club members-->    
+  <div class="members">
+      <img src="andrew_kirkman.jpeg" width="200" height="200">
+      <img src="craig_white.jpg" width="200" height="200">
+      <img src="drew_kotula.png" width="200" height="200">
+      <img src="kellan_christ.png" width="200" height="200">
+      <img src="sam_duis.png" width="200" height="200">
+      <img src="scott_stahlman.jpeg" width="200" height="200">
+  </div>
+
+  <!--Printing out members from a JSON file using fetch()-->
+  <script>
+
+    fetch("./members.json")
+      .then(function(resp) {
+        return resp.json();s
+      })
+      .then(function(data) {
+        console.log(data.sentence);
+      });
+
+  </script>
+
+  </main>
+  
+
+  <footer></footer>
+
+</body>
+
+
+</html>

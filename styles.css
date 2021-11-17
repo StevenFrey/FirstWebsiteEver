@@ -1,0 +1,174 @@
+
+/*General formatting for the page*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+}
+
+/*General formatting for list, links, and buttons*/
+li, a, button {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+/*Heading format*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+/*Making the organizations logo become a pointer when you hover over it.*/
+.logo {
+  cursor: pointer;
+}
+
+/*Navigation formating*/
+.navigation {
+  list-style: none;
+}
+
+/*Navigation formating*/
+.navigation li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/*Navigation formating for transitions when you change screens*/
+.nagivation li, a {
+  transition: all 0.5s ease 0s;
+}
+
+/*Navigation formating for hovering*/
+.nagivation li, a:hover {
+  color: rgb(0, 100, 0);
+}
+
+/*Aligning text for the merch list to be center with more spacing.*/
+.merch li, a {
+  text-align: center;
+  padding: 10pt;
+}
+
+
+/*Join our community, spacing of the list to be more pronounced*/
+.communityList li {
+  padding: 0px 20px;
+  
+}
+
+/*Aligning text for the community list to be center with more spacing.*/
+.communityList li, a {
+  text-align: center;
+  padding: 10pt;
+}
+
+/*Making all buttons a specific green and uniform look*/
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  background-color: rgba(0, 100, 0, 1);
+}
+
+/*When you hover over the buttons on the website it shades it slightly*/
+button:hover {
+  background-color: rgba(0, 100, 0, .5);
+}
+
+main h1 {
+  margin-left: 15%;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #FFD700;
+}
+
+main p {
+  margin-top: 10px;
+  margin-left: 15%;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: Arial, sans-serif;
+  color: #FFF5EE;
+  font-size: 16pt;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*If you hover over an image it will make the cursor a pointer.*/
+img:hover {
+  cursor: pointer;
+}
+
+/*body*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*footer */
+footer {
+  margin-top: auto;
+}
+
+
+/* Datepicker class for formatting on the webpage*/
+#datepicker {
+  padding-left: 15%;
+  padding-top: 10pt;
+  color: white;
+  row-gap: 30pt;
+}
+
+/*Accordian h3 header design*/
+.accordian h3{
+  color: white;
+  padding-left: 15%
+}
+
+/*h3 design */
+h3 {
+  margin-top: 2%;
+  color: white;
+  padding-left: 10%;
+}
+
+/*Hovering for the h3 to show you are selecting that area (Mostly for the Supporters page)*/
+h3:hover {
+  background-color: rgba(0, 100, 0, .5);
+}
+
+.members {
+  margin-top: 5%;
+  padding-left: 20%;
+}
+
